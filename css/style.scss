@@ -207,7 +207,54 @@ html {
 
   #About {
     height: 100vh;
-  }
+
+    > #container {
+      width: 1200px;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      // border: 1px solid #000;
+      > .detail {
+        width: 500px;
+        height: 500px;
+
+        > h3 {
+          font-size: 50px;
+          line-height: 1.6;
+          margin-top: 150px;
+          // border: 1px solid #000;
+          > span {
+            color: #ec9cb0;
+            font-style: italic;
+          }
+        }
+      }
+      > .frame {
+        width: 500px;
+        // border: 1px solid #000;
+        > .list {
+          > li {
+            line-height: 1.4;
+            height: 100px;
+            &:nth-child(1) {
+              margin-top: 40px;
+            }
+            &:nth-child(3) {
+              margin-top: 60px;
+            }
+            > h4 {
+              color: #20d397;
+              font-size: 20px;
+              padding: 15px 0;
+            }
+            > p {
+              font-size: 17px;
+            } //end of p
+          } //end of li
+        } //end of .list
+      } //end of frame
+    } //end of container
+  } //end of #about
   #hobby {
     height: 100vh;
     background-color: rgb(207, 207, 74);

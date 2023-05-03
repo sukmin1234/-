@@ -193,6 +193,46 @@ html {
 #wrap #About {
   height: 100vh;
 }
+#wrap #About > #container {
+  width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #About > #container > .detail {
+  width: 500px;
+  height: 500px;
+}
+#wrap #About > #container > .detail > h3 {
+  font-size: 50px;
+  line-height: 1.6;
+  margin-top: 150px;
+}
+#wrap #About > #container > .detail > h3 > span {
+  color: #ec9cb0;
+  font-style: italic;
+}
+#wrap #About > #container > .frame {
+  width: 500px;
+}
+#wrap #About > #container > .frame > .list > li {
+  line-height: 1.4;
+  height: 100px;
+}
+#wrap #About > #container > .frame > .list > li:nth-child(1) {
+  margin-top: 40px;
+}
+#wrap #About > #container > .frame > .list > li:nth-child(3) {
+  margin-top: 60px;
+}
+#wrap #About > #container > .frame > .list > li > h4 {
+  color: #20d397;
+  font-size: 20px;
+  padding: 15px 0;
+}
+#wrap #About > #container > .frame > .list > li > p {
+  font-size: 17px;
+}
 #wrap #hobby {
   height: 100vh;
   background-color: rgb(207, 207, 74);
