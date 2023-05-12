@@ -235,15 +235,53 @@ html {
 }
 #wrap #hobby {
   height: 100vh;
-  background-color: rgb(207, 207, 74);
+  background-color: #f9f5e7;
+}
+#wrap #hobby > .hobbyList {
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+#wrap #hobby > .hobbyList > li {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+#wrap #hobby > .hobbyList > li > .frame {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+}
+#wrap #hobby > .hobbyList > li > .frame > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  transition: all 1s;
+}
+#wrap #hobby > .hobbyList > li:hover > .frame > img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+#wrap #hobby > .hobbyList > li > h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+  color: #575858;
 }
 #wrap #skill {
   height: 100vh;
-  background-color: rgb(58, 122, 58);
+  background-color: #F8EAD8;
 }
 #wrap #design {
   height: 100vh;
-  background-color: rgb(192, 116, 116);
+  background-color: #EDDBC7;
 }
 #wrap footer {
   display: flex;
