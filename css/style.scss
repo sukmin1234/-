@@ -1,6 +1,13 @@
 @charset "UTF-8";
-
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: "Dovemayo_wild";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .notosanskr * {
   font-family: "Noto Sans KR", sans-serif;
@@ -207,7 +214,7 @@ html {
 
   #About {
     height: 100vh;
-    
+
     > #container {
       width: 1200px;
       margin: 40px auto;
@@ -257,57 +264,147 @@ html {
   } //end of #about
   #hobby {
     height: 100vh;
-    background-color: #f9f5e7;
-    
-    >.hobbyList{
-      display: flex;
-      justify-content: space-between;
-      width: 1600px;
+    // background-color: #f9f5e7;
+
+    > .hobbyList {
+      width: 1200px;
       margin: 0 auto;
-      margin-top: 180px;
-      >li{
-        position: relative;
-        width: 300px;
-        height: 300px;
-        >.frame{
+
+      // border: 1px solid #000;
+
+      > li {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        margin-top: 10px;
+        > .frame {
+          position: relative;
           overflow: hidden;
+          width: 150px;
+          height: 150px;
           border-radius: 15px;
-          width: 300px;
-          height: 400px;
-          >img{
+          &:hover > img {
+            transform: scale(1.1);
+          }
+          > img {
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 15px;
             transition: all 1s;
-          }//end of img
-        }//end of .frame
-        &:hover>.frame>img{
-          transform: scale(1.1);
-          opacity: 0.9;
-        }
-        >h3{
-          font-size: 22px;
-          text-align: center;
-          margin-top: 30px;
-          font-style: italic;
-          color: #575858;
-        }
-        
-      }//end of li
-      
-      
-    }
-  }//end of hobby
+          } //end of img
+        } //end of frame
+        > .explain {
+          font-family: "Dovemayo_wild";
+          margin-left: 15px;
+          > h3 {
+            font-size: 22px;
+            margin: 20px 0;
+          } //end of h3
+          > p {
+            line-height: 1.6;
+            font-size: 17px;
+            > span {
+              color: #fa5050;
+            }
+          }
+        } //end of explain
+      } //end of li
+    } //end of hobbyList
+  } //end of hobby
   #skill {
     height: 100vh;
-    background-color: #F8EAD8;
-    
+    // background-color: #F8EAD8;
+    > .skillContainer {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+      > .before {
+        width: 50%;
+        border: 1px solid #000;
+        > h2 {
+          font-size: 26px;
+          padding: 30px 0;
+          text-align: center;
+        } //end of h2
+        > .skillList {
+          position: relative;
+          > li {
+            display: flex;
+            height: 100px;
+            > .frame {
+              width: 100px;
+              height: 70px;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: contain;
+              text-indent: -9999px;
+            }
+            &:nth-child(1) > .frame {
+              background-image: url(./../images/html.png);
+            }
+            &:nth-child(2) > .frame {
+              background-image: url(./../images/css.png);
+            }
+            &:nth-child(3) > .frame {
+              background-image: url(./../images/sass.png);
+            }
+            &:nth-child(4) > .frame {
+              background-image: url(./../images/JS.png);
+            }
+            &:nth-child(5) > .frame {
+              background-image: url(./../images/JQuery-Logo.svg.png);
+            }
+            &:nth-child(6) > .frame {
+              background-image: url(./../images/java.png);
+            }
+            > .gauge {
+              margin-top: 20px;
+              margin-left: 20px;
+              height: 30px;
+              background-color: red;
+            } //end of gauge
+            &:nth-child(1) > .gauge {
+              width: 400px;
+              background-color: #e44d26;
+            }
+            &:nth-child(2) > .gauge {
+              background-color: #264de4;
+              width: 380px;
+            }
+            &:nth-child(3) > .gauge {
+              width: 380px;
+              background-color: #cd6799;
+            }
+            &:nth-child(4) > .gauge {
+              width: 320px;
+              background-color: #f7df1e;
+            }
+            &:nth-child(5) > .gauge {
+              width: 320px;
+              background-color: #0868ac;
+            }
+            &:nth-child(6) > .gauge {
+              width: 320px;
+              background-color: #ec2025;
+            }
+          } //end of li
+        } //end of skillList
+      } //end of before
+      > .after {
+        width: 50%;
+        text-align: center;
+        border: 1px solid #000;
+        > h2 {
+          font-size: 26px;
+          padding: 30px 0;
+          text-align: center;
+        }
+      } //end of after
+    }
   }
   #design {
     height: 100vh;
-    background-color: #EDDBC7;
+    // background-color: #EDDBC7;
   }
 
   footer {
