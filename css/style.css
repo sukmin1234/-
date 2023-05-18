@@ -291,10 +291,12 @@ html {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
 }
 #wrap #skill > .skillContainer > .before {
   width: 50%;
-  border: 1px solid #000;
 }
 #wrap #skill > .skillContainer > .before > h2 {
   font-size: 26px;
@@ -307,6 +309,10 @@ html {
 #wrap #skill > .skillContainer > .before > .skillList > li {
   display: flex;
   height: 100px;
+}
+#wrap #skill > .skillContainer > .before > .skillList > li > span {
+  margin-top: 25px;
+  margin-left: 10px;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li > .frame {
   width: 100px;
@@ -338,41 +344,138 @@ html {
   margin-top: 20px;
   margin-left: 20px;
   height: 30px;
+  text-indent: -9999px;
   background-color: red;
+  border-radius: 0 10px 10px 0;
+}
+@keyframes gauge1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+@keyframes gauge2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 380px;
+  }
+}
+@keyframes gauge3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 380px;
+  }
+}
+@keyframes gauge4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes gauge5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes gauge6 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(1) > .gauge {
   width: 400px;
   background-color: #e44d26;
+  animation: gauge1 5s;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(2) > .gauge {
-  background-color: #264de4;
   width: 380px;
+  background-color: #264de4;
+  animation: gauge2 5s;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(3) > .gauge {
   width: 380px;
   background-color: #cd6799;
+  animation: gauge3 5s;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(4) > .gauge {
-  width: 320px;
+  width: 300px;
   background-color: #f7df1e;
+  animation: gauge4 5s;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(5) > .gauge {
-  width: 320px;
+  width: 300px;
   background-color: #0868ac;
+  animation: gauge5 5s;
 }
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(6) > .gauge {
-  width: 320px;
+  width: 300px;
   background-color: #ec2025;
+  animation: gauge6 5s;
 }
 #wrap #skill > .skillContainer > .after {
+  position: relative;
   width: 50%;
   text-align: center;
-  border: 1px solid #000;
+  border-left: 1px solid #ccc;
 }
 #wrap #skill > .skillContainer > .after > h2 {
   font-size: 26px;
   padding: 30px 0;
   text-align: center;
+}
+#wrap #skill > .skillContainer > .after > ul > li {
+  width: 150px;
+  height: 120px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  margin-top: 40px;
+}
+#wrap #skill > .skillContainer > .after > ul > li:nth-child(1) {
+  position: absolute;
+  left: 120px;
+  top: 100px;
+  background-image: url(./../images/nodeJS.png);
+}
+#wrap #skill > .skillContainer > .after > ul > li:nth-child(2) {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  background-image: url(./../images/nextJs.png);
+}
+#wrap #skill > .skillContainer > .after > ul > li:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 250px;
+  background-image: url(./../images/python.jpg);
+}
+#wrap #skill > .skillContainer > .after > ul > li:nth-child(4) {
+  position: absolute;
+  left: 120px;
+  top: 400px;
+  background-image: url(../images/sql.png);
+}
+#wrap #skill > .skillContainer > .after > ul > li:nth-child(5) {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  background-image: url(../images/c++.png);
 }
 #wrap #design {
   height: 100vh;
