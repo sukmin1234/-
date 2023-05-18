@@ -299,6 +299,7 @@ html {
   width: 50%;
 }
 #wrap #skill > .skillContainer > .before > h2 {
+  font-family: "Dovemayo_wild";
   font-size: 26px;
   padding: 30px 0;
   text-align: center;
@@ -433,6 +434,7 @@ html {
   border-left: 1px solid #ccc;
 }
 #wrap #skill > .skillContainer > .after > h2 {
+  font-family: "Dovemayo_wild";
   font-size: 26px;
   padding: 30px 0;
   text-align: center;
@@ -477,8 +479,20 @@ html {
   top: 400px;
   background-image: url(../images/c++.png);
 }
-#wrap #design {
+#wrap #contact {
   height: 100vh;
+}
+#wrap #contact > h3 {
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #757575;
+}
+#wrap #contact > .container {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #000;
 }
 #wrap footer {
   display: flex;

@@ -324,6 +324,7 @@ html {
       > .before {
         width: 50%;
         > h2 {
+          font-family: "Dovemayo_wild";
           font-size: 26px;
           padding: 30px 0;
           text-align: center;
@@ -465,6 +466,7 @@ html {
         text-align: center;
         border-left: 1px solid #ccc;
         > h2 {
+          font-family: "Dovemayo_wild";
           font-size: 26px;
           padding: 30px 0;
           text-align: center;
@@ -511,9 +513,21 @@ html {
       } //end of after
     }//end of skillContainer
   }
-  #design {
+  #contact {
     height: 100vh;
     // background-color: #EDDBC7;
+    >h3{
+      padding: 30px;
+      text-align: center;
+      font-size: 30px;
+      color: #757575;
+    }
+    >.container{
+      width: 700px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
   }
 
   footer {
