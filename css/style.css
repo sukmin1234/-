@@ -482,17 +482,50 @@ html {
 #wrap #contact {
   height: 100vh;
 }
-#wrap #contact > h3 {
-  padding: 30px;
+#wrap #contact > p {
+  padding-bottom: 40px;
   text-align: center;
   font-size: 30px;
   color: #757575;
 }
-#wrap #contact > .container {
+#wrap #contact > .wrapper {
+  position: relative;
   width: 700px;
   height: 500px;
   margin: 0 auto;
+  outline: 1px solid #757575;
+  padding: 20px 0;
+}
+#wrap #contact > .wrapper > .profile {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -90px;
+  width: 150px;
+  height: 180px;
   border: 1px solid #000;
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: center center;
+}
+#wrap #contact > .wrapper > .container > h2 {
+  font-size: 2rem;
+  margin: 160px 0 30px;
+  font-weight: 800;
+  margin-left: 30px;
+}
+#wrap #contact > .wrapper > .container > ul > li {
+  font-size: 1.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+#wrap #contact > .wrapper > .container > ul > li:nth-child(2) > :hover {
+  color: #1748b4;
+}
+#wrap #contact > .wrapper > .container > ul > li:last-child {
+  margin-top: 20px;
 }
 #wrap footer {
   display: flex;

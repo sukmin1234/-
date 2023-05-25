@@ -516,19 +516,59 @@ html {
   #contact {
     height: 100vh;
     // background-color: #EDDBC7;
-    >h3{
-      padding: 30px;
+    >p{
+      padding-bottom: 40px;
       text-align: center;
       font-size: 30px;
       color: #757575;
     }
-    >.container{
-      width: 700px;
-      height: 500px;
-      margin: 0 auto;
-      border: 1px solid #000;
-    }
-  }
+    >.wrapper{
+        position: relative;
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        outline: 1px solid #757575;
+        padding: 20px 0;
+      >.profile{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        margin-top: -90px;
+        width: 150px;
+        height: 180px;
+        border: 1px solid #000;
+        background-repeat: no-repeat;
+        background-size: 160%;
+        background-position: center center;
+        
+      }
+      >.container{
+        
+        >h2{
+          font-size: 2rem;
+          margin: 160px 0 30px;
+          font-weight: 800;
+          margin-left: 30px;
+          
+        }//end of h2
+        >ul{
+          >li{
+            font-size: 1.2rem;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-left: 30px;
+            &:nth-child(2)>:hover{
+              color: #1748b4;
+            }
+            &:last-child{
+              margin-top: 20px;
+            }
+          }//end of li
+        }//end of ul
+      }//end of container
+    }//end of .wrapper
+  }//end of #contact
 
   footer {
     display: flex;
