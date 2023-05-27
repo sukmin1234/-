@@ -88,4 +88,5 @@ $btn.addEventListener("click", function () {
 
 $nav.addEventListener("click", function () {
   $nav.style.display = "none";
+  $btn.classList.remove("clse");
 });

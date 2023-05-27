@@ -682,9 +682,14 @@ html {
               text-align: center;
               border: none;
 
+              &:last-child {
+                border-bottom: 1px solid rgb(180, 180, 180);
+              }
+              border-bottom: 1px solid #e9e6e6;
               > a {
                 display: block;
-
+                padding: 10px 0;
+                font-size: 16px;
                 &:hover {
                   background-color: #ade7eb;
                   color: #fff;

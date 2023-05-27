@@ -618,9 +618,15 @@ html {
     line-height: 50px;
     text-align: center;
     border: none;
+    border-bottom: 1px solid #e9e6e6;
+  }
+  #wrap > header > .header_container > nav > .gnb > li:last-child {
+    border-bottom: 1px solid rgb(180, 180, 180);
   }
   #wrap > header > .header_container > nav > .gnb > li > a {
     display: block;
+    padding: 10px 0;
+    font-size: 16px;
   }
   #wrap > header > .header_container > nav > .gnb > li > a:hover {
     background-color: #ade7eb;
