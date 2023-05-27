@@ -22,8 +22,9 @@ html {
 #wrap > header {
   position: relative;
   width: 100%;
-  padding: 20px 0;
+  height: 66px;
   background-color: #fff;
+  box-sizing: border-box;
   border-bottom: 1px solid rgb(180, 180, 180);
 }
 #wrap > header.fiexd {
@@ -33,17 +34,23 @@ html {
   z-index: 1000;
 }
 #wrap > header > .header_container {
+  position: relative;
   width: 80%;
+  height: 66px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-#wrap > header > .header_container > .logo > a {
-  display: block;
+#wrap > header > .header_container > .btn-gnb {
+  display: none;
+}
+#wrap > header > .header_container > .logo {
+  margin-top: 25px;
 }
 #wrap > header > .header_container > nav > .gnb {
   display: flex;
   justify-content: space-around;
+  margin-top: 25px;
 }
 #wrap > header > .header_container > nav > .gnb > li {
   border-right: 1px solid rgb(180, 180, 180);
@@ -511,6 +518,7 @@ html {
   color: #757575;
 }
 #wrap #contact > .wrapper {
+  display: flex;
   position: relative;
   width: 700px;
   height: 500px;
@@ -519,6 +527,9 @@ html {
   padding: 20px 30px;
   border-radius: 15px;
   box-shadow: 3px 4px 6px 4px #acabab;
+}
+#wrap #contact > .wrapper > .container {
+  width: 50%;
 }
 #wrap #contact > .wrapper > .container > h2 {
   font-size: 2rem;
@@ -540,25 +551,27 @@ html {
   margin-top: 20px;
 }
 #wrap #contact > .wrapper > .profile {
+  width: 50%;
+  height: 500px;
+}
+#wrap #contact > .wrapper > .profile > .profileContainer {
   overflow: hidden;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  margin-top: -125px;
+  margin-top: 130px;
+  margin-left: 30px;
   width: 250px;
   height: 250px;
   border: 1px solid #dedede;
   border-radius: 15px;
 }
-#wrap #contact > .wrapper > .profile > .frame:hover > img {
+#wrap #contact > .wrapper > .profile > .profileContainer > .frame:hover > img {
   transform: scale(1.1);
   opacity: 0.9;
 }
-#wrap #contact > .wrapper > .profile > .frame {
+#wrap #contact > .wrapper > .profile > .profileContainer > .frame {
   width: 250px;
   height: 250px;
 }
-#wrap #contact > .wrapper > .profile > .frame > img {
+#wrap #contact > .wrapper > .profile > .profileContainer > .frame > img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -575,4 +588,176 @@ html {
   color: rgba(223, 223, 223, 0.9058823529);
   height: 150px;
   background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+  #wrap > header > .header_container {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+  #wrap > header > .header_container > .logo {
+    margin: 0;
+    margin-left: 30px;
+    line-height: 66px;
+  }
+  #wrap > header > .header_container > nav {
+    display: none;
+    padding-top: 1px;
+    width: 100%;
+    background: #fff;
+  }
+  #wrap > header > .header_container > nav > .gnb {
+    display: block;
+  }
+  #wrap > header > .header_container > nav > .gnb > li {
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+  }
+  #wrap > header > .header_container > nav > .gnb > li > a {
+    display: block;
+  }
+  #wrap > header > .header_container > nav > .gnb > li > a:hover {
+    background-color: #ade7eb;
+    color: #fff;
+  }
+  #wrap > header > .header_container > .btn-gnb {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-left: -9px;
+    width: 24px;
+    height: 18px;
+    text-indent: -9999px;
+    background-image: url(./../images/mnu_btn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  #wrap > header > .header_container > .btn-gnb.clse {
+    background-image: url(./../images/clse_btn.png);
+  }
+  @keyframes rotateBtn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #wrap > header > .header_container > .btn-gnb.clse:hover {
+    animation: rotateBtn 0.5s;
+  }
+  #wrap > #Home {
+    width: 100%;
+  }
+  #wrap > #Home > h1 {
+    font-size: 26px;
+    margin-left: -231px;
+  }
+  #wrap > #About {
+    width: 100%;
+  }
+  #wrap > #About > #container {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  #wrap > #About > #container > .detail {
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    text-align: center;
+  }
+  #wrap > #About > #container > .detail > h3 {
+    margin-top: 0;
+    padding: 20px 0;
+  }
+  #wrap > #About > #container > .frame {
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 100px;
+  }
+  #wrap > #About > #container > .frame > .list > li {
+    margin-top: 0;
+    text-align: center;
+  }
+  #wrap > #About > #container > .frame > .list > li:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #wrap > #About > #container > .frame > .list > li:nth-child(3) {
+    margin-top: 100px;
+  }
+  #wrap #hobby {
+    width: 100%;
+  }
+  #wrap #hobby > .hobbyList {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #wrap #hobby > .hobbyList > li {
+    width: 100%;
+  }
+  #wrap #hobby > .hobbyList > li > .frame {
+    width: 150px;
+    height: 150px;
+  }
+  #wrap #hobby > .hobbyList > li > .frame > img {
+    width: 150px;
+    height: 150px;
+  }
+  #wrap #hobby > .hobbyList > li > .explain {
+    width: 70%;
+  }
+  #wrap #skill {
+    width: 100%;
+  }
+  #wrap #skill > .skillContainer {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #wrap #skill > .skillContainer > .before {
+    width: 100%;
+  }
+  #wrap #skill > .skillContainer > .after {
+    display: none;
+  }
+  #wrap #contact {
+    width: 100%;
+  }
+  #wrap #contact > .wrapper {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #wrap #contact > .container {
+    width: 40%;
+    margin: 0 auto;
+  }
+  #wrap #contact > .profile {
+    display: none;
+    width: 100%;
+  }
+  #wrap #contact > .profile > .profileContainer {
+    display: none;
+  }
+  #wrap #contact > .profile > .profileContainer > .frame {
+    width: 100%;
+  }
+  #wrap #contact > .profile > .profileContainer > .frame > img {
+    width: 100%;
+    position: absolute;
+    left: -99999px;
+  }
 }/*# sourceMappingURL=style.css.map */

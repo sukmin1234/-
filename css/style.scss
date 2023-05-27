@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #wrap {
   //전체 h2
   section > h2 {
@@ -25,8 +26,8 @@ html {
   > header {
     position: relative;
     width: 100%;
+    height: 66px;
     // min-width: 1200px;
-    padding: 20px 0;
     background-color: #fff;
 
     &.fiexd {
@@ -35,22 +36,32 @@ html {
       top: 0;
       z-index: 1000;
     }
-
+    box-sizing: border-box;
     border-bottom: 1px solid rgb(180, 180, 180);
     > .header_container {
+      position: relative;
       width: 80%;
+      height: 66px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      > .btn-gnb {
+        display: none;
+      } //end of .btn-gnb
       > .logo {
+        // width: 50px;
+        // height: 57px;
+        margin-top: 25px;
         > a {
-          display: block;
+          // display: block;
+          // height: 57px;
         }
       } //end of logo
       > nav {
         > .gnb {
           display: flex;
           justify-content: space-around;
+          margin-top: 25px;
           > li {
             :hover,
             .on {
@@ -277,6 +288,7 @@ html {
         border: 1px solid #ccc;
         border-radius: 15px;
         margin-top: 10px;
+
         > .frame {
           position: relative;
           overflow: hidden;
@@ -559,6 +571,7 @@ html {
       color: #757575;
     }
     > .wrapper {
+      display: flex;
       position: relative;
       width: 700px;
       height: 500px;
@@ -569,6 +582,7 @@ html {
       box-shadow: 3px 4px 6px 4px #acabab;
 
       > .container {
+        width: 50%;
         > h2 {
           font-size: 2rem;
           margin: 160px 0 30px;
@@ -592,37 +606,39 @@ html {
         } //end of ul
       } //end of container
       > .profile {
-        overflow: hidden;
-        position: absolute;
-        right: 30px;
-        top: 50%;
-        margin-top: -125px;
-        width: 250px;
-        height: 250px;
-        border: 1px solid #dedede;
-        border-radius: 15px;
-        // background-image: url(/images/뒷모습.jpg);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: 50% 50%;
-        > .frame:hover > img {
-          transform: scale(1.1);
-          opacity: 0.9;
-        }
-        > .frame {
+        width: 50%;
+        height: 500px;
+        > .profileContainer {
+          overflow: hidden;
+          margin-top: 130px;
+          margin-left: 30px;
           width: 250px;
           height: 250px;
-          > img {
-            object-fit: cover;
-            display: block;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #dedede;
-            border-radius: 15px;
-            transition: all 1s;
-          } //end of img
-        } //end of .frame
-      } //end of .profile
+          border: 1px solid #dedede;
+          border-radius: 15px;
+          // background-image: url(/images/뒷모습.jpg);
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: 50% 50%;
+          > .frame:hover > img {
+            transform: scale(1.1);
+            opacity: 0.9;
+          }
+          > .frame {
+            width: 250px;
+            height: 250px;
+            > img {
+              object-fit: cover;
+              display: block;
+              width: 100%;
+              height: 100%;
+              border: 1px solid #dedede;
+              border-radius: 15px;
+              transition: all 1s;
+            } //end of img
+          } //end of .frame
+        } //end of .profile
+      }
     } //end of .wrapper
   } //end of #contact
 
@@ -635,3 +651,197 @@ html {
     background-color: #000;
   } //end of footer
 } //end of #wrap
+
+@media screen and (max-width: 768px) {
+  #wrap {
+    width: 100%;
+
+    > header {
+      > .header_container {
+        display: block;
+        width: 100%;
+        height: 40px;
+        > .logo {
+          // display: block;
+          // width: 100%;
+          margin: 0;
+          margin-left: 30px;
+          line-height: 66px;
+        }
+        > nav {
+          display: none;
+          padding-top: 1px;
+          width: 100%;
+          background: #fff;
+          > .gnb {
+            display: block;
+
+            > li {
+              width: 100%;
+              line-height: 50px;
+              text-align: center;
+              border: none;
+
+              > a {
+                display: block;
+
+                &:hover {
+                  background-color: #ade7eb;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        > .btn-gnb {
+          background: none;
+          border: none;
+          outline: none;
+          display: block;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          margin-left: -9px;
+          width: 24px;
+          height: 18px;
+
+          text-indent: -9999px;
+          background-image: url(./../images/mnu_btn.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+
+          &.clse {
+            background-image: url(./../images/clse_btn.png);
+
+            @keyframes rotateBtn {
+              0% {
+                transform: rotate(0);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+
+            &:hover {
+              animation: rotateBtn 0.5s;
+            }
+          }
+        }
+      }
+    }
+
+    > #Home {
+      width: 100%;
+      > h1 {
+        font-size: 26px;
+        margin-left: -231px;
+      }
+    }
+    > #About {
+      width: 100%;
+      > #container {
+        display: block;
+        width: 100%;
+        margin: 0;
+        > .detail {
+          width: 80%;
+          margin: 0 auto;
+          height: 150px;
+          text-align: center;
+          > h3 {
+            margin-top: 0;
+            padding: 20px 0;
+          }
+        }
+
+        > .frame {
+          width: 80%;
+          margin: 30px auto;
+          margin-top: 100px;
+          > .list {
+            > li {
+              margin-top: 0;
+              text-align: center;
+              &:nth-child(2) {
+                margin-top: 30px;
+                margin-bottom: 30px;
+              }
+              &:nth-child(3) {
+                margin-top: 100px;
+              }
+            } //end of li
+          } //end of .list
+        } //end of .frame
+      } //end of #container
+    } //end of #About
+
+    #hobby {
+      width: 100%;
+      > .hobbyList {
+        width: 90%;
+        margin: 0 auto;
+        > li {
+          width: 100%;
+
+          > .frame {
+            width: 150px;
+            height: 150px;
+            > img {
+              width: 150px;
+              height: 150px;
+            }
+          }
+          > .explain {
+            width: 70%;
+          }
+        }
+      }
+    } //end of #hobby
+
+    #skill {
+      width: 100%;
+      > .skillContainer {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        > .before {
+          width: 100%;
+        } //end of before
+        > .after {
+          display: none;
+        } //end of .after
+      } //end of .skillContainer
+    } //end of skill
+
+    #contact {
+      width: 100%;
+      > .wrapper {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      > .container {
+        width: 40%;
+        margin: 0 auto;
+        // text-align: center;
+      }
+
+      > .profile {
+        display: none;
+        width: 100%;
+        > .profileContainer {
+          display: none;
+          > .frame {
+            width: 100%;
+            > img {
+              width: 100%;
+              position: absolute;
+              left: -99999px;
+            }
+          }
+        }
+      }
+    }
+  } //end of wrap
+}

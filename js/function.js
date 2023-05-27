@@ -10,11 +10,12 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY;
 
   console.log(value);
-  if (value > 300) {
+  if (value > 300 && window.innerWidth > 768) {
     mainText.style.animation = "disappear 1s ease-out forwards";
   } else {
     mainText.style.animation = "move 1s ease-out";
   }
+
   if (value > 2300) {
     skill1.style.animation = "gauge1 5s ease-out";
     skill2.style.animation = "gauge2 5s ease-out";
@@ -76,3 +77,15 @@ window.onload = function () {
     navLinks[closestIndex].classList.add("on");
   };
 };
+
+const $btn = document.querySelector("button");
+const $nav = document.querySelector("nav");
+$btn.addEventListener("click", function () {
+  $btn.classList.toggle("clse");
+
+  $nav.style.display = $nav.style.display === "block" ? "none" : "block";
+});
+
+$nav.addEventListener("click", function () {
+  $nav.style.display = "none";
+});
