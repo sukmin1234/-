@@ -1,4 +1,10 @@
 let mainText = document.querySelector("h1");
+let skill1 = document.querySelector(".gauge1");
+let skill2 = document.querySelector(".gauge2");
+let skill3 = document.querySelector(".gauge3");
+let skill4 = document.querySelector(".gauge4");
+let skill5 = document.querySelector(".gauge5");
+let skill6 = document.querySelector(".gauge6");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -8,6 +14,14 @@ window.addEventListener("scroll", function () {
     mainText.style.animation = "disappear 1s ease-out forwards";
   } else {
     mainText.style.animation = "move 1s ease-out";
+  }
+  if (value > 2300) {
+    skill1.style.animation = "gauge1 5s ease-out";
+    skill2.style.animation = "gauge2 5s ease-out";
+    skill3.style.animation = "gauge3 5s ease-out";
+    skill4.style.animation = "gauge4 5s ease-out";
+    skill5.style.animation = "gauge5 5s ease-out";
+    skill6.style.animation = "gauge6 5s ease-out";
   }
 });
 window.addEventListener("scroll", function () {

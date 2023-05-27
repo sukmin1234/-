@@ -341,14 +341,6 @@ html {
 #wrap #skill > .skillContainer > .before > .skillList > li:nth-child(6) > .frame {
   background-image: url(./../images/java.png);
 }
-#wrap #skill > .skillContainer > .before > .skillList > li > .gauge {
-  margin-top: 20px;
-  margin-left: 20px;
-  height: 30px;
-  text-indent: -9999px;
-  background-color: red;
-  border-radius: 0 10px 10px 0;
-}
 @keyframes gauge1 {
   from {
     width: 0;
@@ -394,38 +386,68 @@ html {
     width: 0;
   }
   to {
-    width: 300px;
+    width: 200px;
   }
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(1) > .gauge {
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(1) > .gauge1 {
   width: 400px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #e44d26;
-  animation: gauge1 5s;
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(2) > .gauge {
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(2) > .gauge2 {
   width: 380px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #264de4;
-  animation: gauge2 5s;
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(3) > .gauge {
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(3) > .gauge3 {
   width: 380px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #cd6799;
-  animation: gauge3 5s;
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(4) > .gauge {
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(4) > .gauge4 {
   width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #f7df1e;
-  animation: gauge4 5s;
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(5) > .gauge {
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(5) > .gauge5 {
   width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #0868ac;
-  animation: gauge5 5s;
 }
-#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(6) > .gauge {
-  width: 300px;
+#wrap #skill > .skillContainer > .before > .skillList > li:nth-child(6) > .gauge6 {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
   background-color: #ec2025;
-  animation: gauge6 5s;
 }
 #wrap #skill > .skillContainer > .after {
   position: relative;
@@ -493,20 +515,10 @@ html {
   width: 700px;
   height: 500px;
   margin: 0 auto;
-  outline: 1px solid #757575;
-  padding: 20px 0;
-}
-#wrap #contact > .wrapper > .profile {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  margin-top: -90px;
-  width: 150px;
-  height: 180px;
-  border: 1px solid #000;
-  background-repeat: no-repeat;
-  background-size: 160%;
-  background-position: center center;
+  outline: 1px solid #ccc;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 3px 4px 6px 4px #acabab;
 }
 #wrap #contact > .wrapper > .container > h2 {
   font-size: 2rem;
@@ -526,6 +538,35 @@ html {
 }
 #wrap #contact > .wrapper > .container > ul > li:last-child {
   margin-top: 20px;
+}
+#wrap #contact > .wrapper > .profile {
+  overflow: hidden;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -125px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #dedede;
+  border-radius: 15px;
+}
+#wrap #contact > .wrapper > .profile > .frame:hover > img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+#wrap #contact > .wrapper > .profile > .frame {
+  width: 250px;
+  height: 250px;
+}
+#wrap #contact > .wrapper > .profile > .frame > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dedede;
+  border-radius: 15px;
+  transition: all 1s;
 }
 #wrap footer {
   display: flex;
