@@ -29,6 +29,8 @@ html {
     height: 66px;
     // min-width: 1200px;
     background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(180, 180, 180);
 
     &.fiexd {
       position: fixed;
@@ -36,8 +38,6 @@ html {
       top: 0;
       z-index: 1000;
     }
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(180, 180, 180);
     > .header_container {
       position: relative;
       width: 80%;
@@ -79,7 +79,7 @@ html {
           }
         } //end of .gnb
       } //end of nav
-    }
+    }//end of .header_container
   } //end of header
 
   #Home {
@@ -611,7 +611,8 @@ html {
         > .profileContainer {
           overflow: hidden;
           margin-top: 130px;
-          margin-left: 30px;
+          margin-left: 60px;
+          
           width: 250px;
           height: 250px;
           border: 1px solid #dedede;
@@ -655,8 +656,11 @@ html {
 @media screen and (max-width: 768px) {
   #wrap {
     width: 100%;
-
-    > header {
+    //전체 h2 사이즈 조절
+    >section>h2{
+      font-size: 45px;
+    }
+     header {
       > .header_container {
         display: block;
         width: 100%;
@@ -694,10 +698,10 @@ html {
                   background-color: #ade7eb;
                   color: #fff;
                 }
-              }
-            }
-          }
-        }
+              }//end of a
+            }//end of li
+          }//end of .gnb
+        }//end of nav
         > .btn-gnb {
           background: none;
           border: none;
@@ -733,16 +737,15 @@ html {
           }
         }
       }
-    }
-
-    > #Home {
+    }//end of header
+     #Home {
       width: 100%;
       > h1 {
         font-size: 26px;
         margin-left: -231px;
       }
-    }
-    > #About {
+    }//end of #home
+     #About {
       width: 100%;
       > #container {
         display: block;
@@ -756,6 +759,7 @@ html {
           > h3 {
             margin-top: 0;
             padding: 20px 0;
+            font-size: 40px;
           }
         }
 
@@ -847,6 +851,6 @@ html {
           }
         }
       }
-    }
+    }//end of #contact
   } //end of wrap
 }

@@ -557,7 +557,7 @@ html {
 #wrap #contact > .wrapper > .profile > .profileContainer {
   overflow: hidden;
   margin-top: 130px;
-  margin-left: 30px;
+  margin-left: 60px;
   width: 250px;
   height: 250px;
   border: 1px solid #dedede;
@@ -594,45 +594,48 @@ html {
   #wrap {
     width: 100%;
   }
-  #wrap > header > .header_container {
+  #wrap > section > h2 {
+    font-size: 45px;
+  }
+  #wrap header > .header_container {
     display: block;
     width: 100%;
     height: 40px;
   }
-  #wrap > header > .header_container > .logo {
+  #wrap header > .header_container > .logo {
     margin: 0;
     margin-left: 30px;
     line-height: 66px;
   }
-  #wrap > header > .header_container > nav {
+  #wrap header > .header_container > nav {
     display: none;
     padding-top: 1px;
     width: 100%;
     background: #fff;
   }
-  #wrap > header > .header_container > nav > .gnb {
+  #wrap header > .header_container > nav > .gnb {
     display: block;
   }
-  #wrap > header > .header_container > nav > .gnb > li {
+  #wrap header > .header_container > nav > .gnb > li {
     width: 100%;
     line-height: 50px;
     text-align: center;
     border: none;
     border-bottom: 1px solid #e9e6e6;
   }
-  #wrap > header > .header_container > nav > .gnb > li:last-child {
+  #wrap header > .header_container > nav > .gnb > li:last-child {
     border-bottom: 1px solid rgb(180, 180, 180);
   }
-  #wrap > header > .header_container > nav > .gnb > li > a {
+  #wrap header > .header_container > nav > .gnb > li > a {
     display: block;
     padding: 10px 0;
     font-size: 16px;
   }
-  #wrap > header > .header_container > nav > .gnb > li > a:hover {
+  #wrap header > .header_container > nav > .gnb > li > a:hover {
     background-color: #ade7eb;
     color: #fff;
   }
-  #wrap > header > .header_container > .btn-gnb {
+  #wrap header > .header_container > .btn-gnb {
     background: none;
     border: none;
     outline: none;
@@ -648,7 +651,7 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
   }
-  #wrap > header > .header_container > .btn-gnb.clse {
+  #wrap header > .header_container > .btn-gnb.clse {
     background-image: url(./../images/clse_btn.png);
   }
   @keyframes rotateBtn {
@@ -659,48 +662,49 @@ html {
       transform: rotate(360deg);
     }
   }
-  #wrap > header > .header_container > .btn-gnb.clse:hover {
+  #wrap header > .header_container > .btn-gnb.clse:hover {
     animation: rotateBtn 0.5s;
   }
-  #wrap > #Home {
+  #wrap #Home {
     width: 100%;
   }
-  #wrap > #Home > h1 {
+  #wrap #Home > h1 {
     font-size: 26px;
     margin-left: -231px;
   }
-  #wrap > #About {
+  #wrap #About {
     width: 100%;
   }
-  #wrap > #About > #container {
+  #wrap #About > #container {
     display: block;
     width: 100%;
     margin: 0;
   }
-  #wrap > #About > #container > .detail {
+  #wrap #About > #container > .detail {
     width: 80%;
     margin: 0 auto;
     height: 150px;
     text-align: center;
   }
-  #wrap > #About > #container > .detail > h3 {
+  #wrap #About > #container > .detail > h3 {
     margin-top: 0;
     padding: 20px 0;
+    font-size: 40px;
   }
-  #wrap > #About > #container > .frame {
+  #wrap #About > #container > .frame {
     width: 80%;
     margin: 30px auto;
     margin-top: 100px;
   }
-  #wrap > #About > #container > .frame > .list > li {
+  #wrap #About > #container > .frame > .list > li {
     margin-top: 0;
     text-align: center;
   }
-  #wrap > #About > #container > .frame > .list > li:nth-child(2) {
+  #wrap #About > #container > .frame > .list > li:nth-child(2) {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  #wrap > #About > #container > .frame > .list > li:nth-child(3) {
+  #wrap #About > #container > .frame > .list > li:nth-child(3) {
     margin-top: 100px;
   }
   #wrap #hobby {
