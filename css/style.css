@@ -259,6 +259,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 15px;
   margin-top: 10px;
+  cursor: pointer;
 }
 #wrap #hobby > .hobbyList > li > .frame {
   position: relative;

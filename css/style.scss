@@ -280,7 +280,6 @@ html {
     > .hobbyList {
       width: 1200px;
       margin: 0 auto;
-
       // border: 1px solid #000;
 
       > li {
@@ -288,7 +287,7 @@ html {
         border: 1px solid #ccc;
         border-radius: 15px;
         margin-top: 10px;
-
+        cursor: pointer;
         > .frame {
           position: relative;
           overflow: hidden;
