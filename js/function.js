@@ -86,7 +86,14 @@ $btn.addEventListener("click", function () {
   $nav.style.display = $nav.style.display === "block" ? "none" : "block";
 });
 
-$nav.addEventListener("click", function () {
-  $nav.style.display = "none";
-  $btn.classList.remove("clse");
-});
+// $nav.addEventListener("click", function () {
+//   $nav.style.display = "none";
+//   $btn.classList.remove("clse");
+// });
+
+if (window.innerWidth < 768) {
+  $nav.addEventListener("click", function () {
+    $nav.style.display = "none";
+    $btn.classList.remove("clse");
+  });
+}
